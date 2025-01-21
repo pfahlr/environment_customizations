@@ -1,6 +1,8 @@
 #!/bin/bash
 this_dir=`basename $PWD`
 for i in `ls -A`; do
-  echo "ln -s $HOME/$this_dir/$i  $HOME/.config/$i"
+  if [ $i != ".git" ] && [ $i != ".gitignore" ] && [ $i != "README.md" ] && [ $i != "make_symlinks" ]; then
+    ln -s $HOME/$this_dir/$i  $HOME/.config/$i
+  fi
 done
- 
+
