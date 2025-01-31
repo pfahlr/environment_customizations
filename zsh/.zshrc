@@ -1,8 +1,20 @@
+# Use powerline
+USE_POWERLINE="false"
+USE_STARSHIP="true"
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+if [ "$USE_POWERLINE" = true ] && [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# explaination: 
+#command -v <command to test if exists> > /dev/null 2>&1 (redirects stdout and stderr to /dev/null) 
+# && (what follows && only executes if the preceeding returned true). So below says, if  USE_STARSHIP
+# and starship command exists then run it
+if [ "$USE_STARSHIP" = true ]; then
+  command -v starship > /dev/null 2>&1 && eval "$(starship init zsh)"
 fi
 
 export TERM="xterm-256color"
@@ -12,8 +24,7 @@ export TERM="xterm-256color"
 export EDITOR="/usr/bin/vim"
 export COLORTERM="truecolor"
 
-# Use powerline
-USE_POWERLINE="true"
+
 
 
 # Source manjaro-zsh-configuration
