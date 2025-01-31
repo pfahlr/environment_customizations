@@ -1,11 +1,23 @@
+//------------------------------------------------------------------------------
+// Author: Rick Pfahl
+// Requires: https://github.com/jeff-hykin/selection-convert.git
+// Description: filter definitions for Selection Convert Module by jeff-hykin
+// Date: 2025-
+// Software used in filters:
+// - Boxes [https://boxes.thomasjensen.com] 
+//
+
 const { execSync } = require('child_process');
 
+//Filter Export Functions
 
+// -- function for Boxes - gradientbox
 selectionToGradient = function(text) {
-  //return "blah"+text+"blah";
   var result = runFilter(text, 'gradientbox');
   return result;
 }
+
+// --/ END Filter Export Functions /--
 
 runFilter = function(text, design) {
   //return "blah"+text+"blah";
