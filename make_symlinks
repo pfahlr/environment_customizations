@@ -1,0 +1,6 @@
+#!/bin/bash
+this_dir=`basename $PWD`
+for i in `ls -A`; do
+  echo "ln -s $HOME/$this_dir/$i  $HOME/.config/$i"
+done
+ 
