@@ -1,4 +1,4 @@
-# environment-customization
+# environment-customizations
 a repository to store bash/zsh and other customizations to my Linux environment 
 
 ```sh
