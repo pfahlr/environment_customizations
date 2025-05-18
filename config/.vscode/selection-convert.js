@@ -15,8 +15,11 @@ const { execSync } = require('child_process');
 
 //Filter Export Functions
 
+selectionToATargetBlank = function(text){
+  var result = '<a href="'+text+'" target="_blank">'+text+'</a>';
+  return result;
+}
 // -- function for Boxes - gradientbox-----------------------------------------
-
 selectionToGradient = function(text) {
   var result = runFilter(text, 'gradientbox');
   return result;
@@ -46,4 +49,4 @@ getFilterCommand = function(text,design) {
   return command;
 }
 
-module.exports = { selectionToGradient, selectionToDoubleLineBox, selectionToIdiotBox };
+module.exports = { selectionToATargetBlank, selectionToGradient, selectionToDoubleLineBox, selectionToIdiotBox };
