@@ -1,0 +1,1 @@
+# add more paths here, place in  `if [[ -d /PATH/ ]] then; export PATH...; fi` blocks for good form
