@@ -61,6 +61,10 @@ if [[ -d /var/lib/snapd/snap/bin ]]; then
   export PATH=$PATH:/var/lib/snapd/snap/bin
 fi
 
+# additional path configurations
+if [[ -f ./.zshpath ]]; then
+  source ./.zshpath
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
