@@ -4,23 +4,21 @@ rcfiles=".zshrc .zsh-completions-rc .zsh-paths"
 SIMPLE_BACKUP_SUFFIX=".1"
 for rcfile in $rcfiles; do
   #if the file exists, move it to a backup
-  [[ -f $HOME/$rcfile ]] && mv --backup $HOME/$rcfile $HOME/$rcfile.bku
+  [[ -f $HOME/$rcfile ]] && mv --backup=numbered  $HOME/$rcfile $HOME/$rcfile.bku
   #if a symlink exists, move it to a backup but indicate it was a link.
-  [[ -L $HOME/$rcfile ]] && mv --backup $HOME/$rcfile $HOME/$rcfile.symlink.bku
+  [[ -L $HOME/$rcfile ]] && mv --backup=numbered $HOME/$rcfile $HOME/$rcfile.symlink.bku
   ln -s $this_dir/zsh/$rcfile $HOME/$rcfile
 done
 if [[ $1 == "--remove-backups" ]]; then
   if [[ $2 == "all" ]]; then
-    backup_suffix=""
+    backup_suffix="*"
   else
     backup_suffix=$SIMPLE_BACKUP_SUFFIX
   fi
   echo "remove backups"
   for rcfile in $rcfiles; do
-    echo $rcfile
-    echo  $HOME/$rcfile.bku$backup_suffix
-    [[ -f $HOME/$rcfile.bku$backup_suffix ]] && rm $HOME/$rcfile.bku$backup_suffix
-    [[ -L $HOME/$rcfile.symlink$backup_suffix ]] && rm $HOME/$rcfile.symlink.bku$backup_suffix
+    rm -f $HOME/$rcfile.bku$backup_suffix
+    rm -f $HOME/$rcfile.symlink.bku$backup_suffix
   done;
 fi
 cd config
