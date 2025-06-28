@@ -1,12 +1,13 @@
 #!/bin/bash
 this_dir="$PWD"
-if [ -f $HOME/.zshrc ]; then
-  mv --backup=numbered  $HOME/.zshrc $HOME/.zshrc.bku
-fi
-if [ -L $HOME/.zshrc ]; then
-  rm $HOME/.zshrc
-fi
-ln -s $this_dir/zsh/.zshrc $HOME/.zshrc
+for rcfile in .zshrc .zsh-completions-rc .zsh-paths; do
+  #if the file exists, move it to a backup
+  [[ -f $HOME/$rcfile ]] && mv --backup=numbered $HOME/$rcfile $HOME/$rcfile.bku
+  #if a symlink exists, move it to a backup but indicate it was a link (not sure -f won't fire already, we will see, lol)
+  [[ -L $HOME/$rcfile ]] && mv --backup=numbered $HOME/$rcfile $HOME/$rcfile.symlink.bku
+  ln -s $this_dir/zsh/$rcfile $HOME/$rcfile
+done
+
 cd config
 ./make_config_symlinks
 
