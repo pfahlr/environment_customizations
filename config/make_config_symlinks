@@ -1,9 +1,29 @@
 #!/bin/bash
 this_dir="$PWD"
-for i in `ls -A`; do
-  if [ $i != ".git" ] && [ $i != ".gitignore" ] && [ $i != "README.md" ] && [ $i != "make_config_symlinks" ]; then
-      rm -rf $HOME/.config/$i
-      ln -s $this_dir/$i  $HOME/.config/$i
+ignore_list=".git .gitignore README.md make_config_symlinks"
+SIMPLE_BACKUP_SUFFIX=".1"
+for i in `ls -A $this_dir`; do
+  if [[ $ignore_list != *$i* ]]; then
+    [[ -f $HOME/.config/$i ]] && echo "moving:$HOME/.config/$i" &&  mv --backup $HOME/.config/$i $HOME/.config/$i.bku
+    [[ -L $HOME/.config/$i ]] && echo "moving link:$HOME/.config/$i" &&  mv --backup $HOME/.config/$i $HOME/.config/$i.symlink.bku
+    echo "creating symlink from $HOME/.config/$i --->  $this_dir/$i"
+    ln -s $this_dir/$i  $HOME/.config/$i
   fi
 done
+cd $HOME/.config
+if [[ $1 == "--remove-backups" ]]; then
+  if [[ $2 == "all" ]]; then
+    backup_suffix=""
+  else
+    backup_suffix=$SIMPLE_BACKUP_SUFFIX
+  fi
+  for i in `ls -A`; do
+    if [[ $ignore_list != *$i* ]]; then
+      [[ -f $HOME/.config/$i.bku$backup_suffix ]] && rm -f $HOME/.config/$i.bku$backup_suffix
+      [[ -L $HOME/.config/$i.symlink.bku$backup_suffix ]] && rm -f $HOME/.config/$i.symlink.bku$backup_suffix
+    fi
+  done;
+fi
+
+cd $this_dir
 
