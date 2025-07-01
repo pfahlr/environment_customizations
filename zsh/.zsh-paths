@@ -1,10 +1,7 @@
 #!/bin/bash
+paths=("$HOME/bin" "$HOME/bash_scripts" "$HOME/.rd/bin" "$HOME/.npm-packages/bin" "/var/lib/snapd/snap/bin")
+for i in $paths; do
+  [[ -d $i ]] && export PATH=$PATH:$i
+done
 
-# standard include of ~/bin where a user's shell scripts are typically stored.
-[[ -d $HOME/bin ]] && export PATH=$PATH:$HOME/bin
 
-#for snapd
-[[ -d /var/lib/snapd/snap/bin ]] && export PATH=$PATH:/var/lib/snapd/snap/bin
-
-#for rancher desktop
-[[ -d $HOME/.rd/bin ]] && export PATH=$PATH:$HOME/.rd/bin
