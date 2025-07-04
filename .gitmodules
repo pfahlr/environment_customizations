@@ -1,3 +1,5 @@
 [submodule "share/jrnl"]
 	path = share/jrnl
 	url = git@github.com:pfahlr/jrnl.git
+        branch = main
+
