@@ -1,0 +1,8 @@
+[2025-07-03 09:55:55 PM] To put cursors at the beginning of each line in VSCode. For example, to insert comment markers in a language that doesn't support multiline comments like yaml:
+1. Select the lines you wish to edit
+2. Press `Alt+Shift+i` 
+3. Press `home` (might take a few presses in some cases).
+4. The cursor will be at the start of each line and you can add your `#` or whatever. 
+
+In summary:
+`Alt+Shift+i` puts cursors on each selected line
