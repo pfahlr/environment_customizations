@@ -3,3 +3,5 @@
 	url = git@github.com:pfahlr/jrnl.git
         branch = main
 
+[jrnl "share/jrnl"]
+	branch = main
