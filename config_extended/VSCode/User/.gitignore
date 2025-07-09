@@ -1,0 +1,4 @@
+globalStorage/*
+!globalStorage/storage.json
+workspaceStorage/*
+History/*
