@@ -3,5 +3,8 @@
     "workbench.settings.applyToAllProfiles": [
         "editor.tabSize"
     ],
-    "editor.stickyTabStops": true
+    "editor.stickyTabStops": true,
+    "editor.tabCompletion": "on",
+    "diffEditor.codeLens": true,
+    "cody.customHeaders": {}
 }
