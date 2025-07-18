@@ -42,6 +42,8 @@ setopt SHARE_HISTORY
 setopt beep extendedglob notify
 bindkey -v
 
+# aliases go in .zsh-aliases
+[[ -f $HOME/.zsh-aliases ]] && source $HOME/.zsh-aliases
 
 
 
