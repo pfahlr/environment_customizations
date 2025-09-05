@@ -1,6 +1,6 @@
 #!/bin/bash
 this_dir="$PWD"
-rcfiles=".zshrc .zsh-completions-rc .zsh-paths"
+rcfiles=".zshrc .zsh-completions-rc .zsh-paths .zsh-env .zsh-rc-extra .zsh-aliases"
 SIMPLE_BACKUP_SUFFIX=".1"
 for rcfile in $rcfiles; do
   #if the file exists, move it to a backup
