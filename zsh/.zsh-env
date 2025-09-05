@@ -1,0 +1,8 @@
+#################################################
+# Z-SHELL Configuration Files
+# .zsh-env: miscellaneous environment variables
+#################################################
+
+
+export MOZ_ENABLE_WAYLAND=1
+

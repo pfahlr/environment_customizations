@@ -1,0 +1,6 @@
+# list additional files to source 
+extra=("$HOME/.zsh-bunrc")
+
+for i in $extra; do
+  [[ -f $i ]] && source $i
+done

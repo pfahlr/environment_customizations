@@ -3,8 +3,34 @@
     "workbench.settings.applyToAllProfiles": [
         "editor.tabSize"
     ],
+    "editor.insertSpaces": true,
+    "editor.allowVariableFonts": true,
     "editor.stickyTabStops": true,
     "editor.tabCompletion": "on",
     "diffEditor.codeLens": true,
-    "cody.customHeaders": {}
+    "cody.customHeaders": {},
+    "editor.fontFamily": "JetBrains Mono Thin",
+    "editor.fontSize": 15,
+    "kilo-code.vsCodeLmModelSelector": {},
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "workbench.colorTheme": "Pink Candy Dark",
+    "terminal-keeper.theme": "iconic",
+    "terminal-keeper.activateOnStartup": false,
+    "terminal.explorerKind": "both",
+    "terminal.external.linuxExec": "xterm-256color",
+    "kilo-code.allowedCommands": [
+        "npm test",
+        "npm install",
+        "tsc",
+        "git log",
+        "git diff",
+        "git show"
+    ],
+    "kilo-code.deniedCommands": [],
+    "workbench.startupEditor": "none",
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "direnv.path.executable": "/run/host/usr/bin/direnv"
 }
