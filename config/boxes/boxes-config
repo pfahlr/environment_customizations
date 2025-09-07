@@ -20,7 +20,7 @@
 
 
 BOX emojiwave
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("emoji","playful","colorful")
 
@@ -44,7 +44,7 @@ END emojiwave
 #=====================================================================
 
 BOX checkerlight
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("checker","block","retro")
 
@@ -68,7 +68,7 @@ END checkerlight
 #=====================================================================
 
 BOX diamondflux
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("geometric","ornate","luxury")
 
@@ -92,7 +92,7 @@ END diamondflux
 #=====================================================================
 
 BOX musicscroll
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("music","ornate","scroll")
 
@@ -116,7 +116,7 @@ END musicscroll
 #=====================================================================
 
 BOX starfield
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("space","stars","cosmic")
 
@@ -140,7 +140,7 @@ END starfield
 #=====================================================================
 
 BOX runicportal
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("mythic","portal","magic")
 
@@ -167,7 +167,7 @@ END runicportal
 
 
 BOX gradientbox
-author "R. Pfahl"
+author "Rick Pfahl"
 designer "(public domain)"
 tags ("simple","programming","box")
 
@@ -205,9 +205,9 @@ END gradientbox
 
 #==============================================================================
 BOX hyperbolicweb
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("math","hyperbolic","geometry","thick-4")
+tags     ("math","hyperbolic","geometry")
 
 sample
 ⟪⟫⟪⟫⟪⟫⟪⟫⟪⟫⟪⟫
@@ -234,9 +234,9 @@ END hyperbolicweb
 #==============================================================================
 
 BOX thunderzig
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("lightning","zigzag","energy","thick-4")
+tags     ("lightning","zigzag","energy")
 
 sample
 ⚡╍⚡╍⚡╍⚡╍⚡
@@ -272,9 +272,9 @@ END thunderzig
 #==============================================================================
 
 BOX mandelbox
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("fractal","mandelbrot","ornate","thick-4")
+tags     ("fractal","mandelbrot","ornate")
 
 sample
 ∰∱∲∳∰∱∲∳∰∱∲∳
@@ -301,9 +301,9 @@ END mandelbox
 #==============================================================================
 
 BOX cubeillusion
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("isometric","3D","illusion","thick-4")
+tags     ("isometric","3D","illusion")
 
 sample
 ⬒⬔⬓⬕⬒⬔⬓⬕
@@ -332,9 +332,9 @@ END cubeillusion
 #==============================================================================
 
 BOX lotusframe
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("mandala","ornate","lotus","thick-4")
+tags     ("mandala","ornate","lotus")
 
 sample
 ✿❀✿❀✿❀✿❀
@@ -363,9 +363,9 @@ END lotusframe
 #==============================================================================
 
 BOX glitchbar
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("glitch","crt","scanlines","thick-4")
+tags     ("glitch","crt","scanlines")
 
 sample
 ▒▒▓▓██░░▒▒▓▓██
@@ -395,9 +395,9 @@ END glitchbar
 #==============================================================================
 
 BOX glitchbar2
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("glitch","crt","scanlines","thick-4")
+tags     ("glitch","crt","scanlines")
 
 sample
 ▒▒▓▓██░░▒▒▓▓██
@@ -429,7 +429,7 @@ END glitchbar2
 
 BOX idiotbox
 
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("simple", "programming", "box")
 
@@ -466,9 +466,9 @@ END idiotbox
 
 
 BOX fourierflow
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("math","fourier","waves","thick-4")
+tags     ("math","fourier","waves")
 
 sample
 ∿≈≋≃∿≈≋≃∿≈≋≃
@@ -494,7 +494,7 @@ END fourierflow
 
 
 BOX doublelinebox
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("line")
 sample
@@ -518,9 +518,9 @@ END doublelinebox
 #==============================================================================
 
 BOX tensorbracket
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("linear-algebra","tensor","ket-bra","thick-4")
+tags     ("linear-algebra","tensor","ket-bra")
 
 sample
 ⎡⎢⎣⎤⎡⎢⎣⎤⎡⎢⎣⎤
@@ -544,9 +544,9 @@ END tensorbracket
 #==============================================================================
 
 BOX moireinterf
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("interference","moire","x-hatch","thick-4")
+tags     ("interference","moire","x-hatch")
 
 sample
 ╳╲╱╲╳╲╱╲╳╲╱╲
@@ -570,9 +570,9 @@ END moireinterf
 #==============================================================================
 
 BOX quasiflux
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("quasicrystal","penrose-ish","diamond","thick-4")
+tags     ("quasicrystal","penrose-ish","diamond")
 
 sample
 ◇◈◆◊◇◈◆◊◇◈◆◊
@@ -596,9 +596,9 @@ END quasiflux
 #==============================================================================
 
 BOX primegrid
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("number-theory","primes","matrix","thick-4")
+tags     ("number-theory","primes","matrix")
 
 sample
 π′″‴π′″‴π′″‴
@@ -623,9 +623,9 @@ END primegrid
 #==============================================================================
 
 BOX fileunderdfordonut
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
-tags     ("gradient","blocks","heavy","thick-4")
+tags     ("gradient","blocks","heavy")
 
 sample
 ▒▓▆▅▇▆▅▄▇▆▅▄▇▆▅▄▇▆▅▄▇▆▅▄▇▆▅▄▇▅▄▄▄▄▓▓
@@ -668,7 +668,7 @@ END fileunderdfordonut
 #=====================================================================
 
 BOX braidbox
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("braid","knotwork","ornate")
 
@@ -693,7 +693,7 @@ END braidbox
 #=====================================================================
 
 BOX knotbox
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("celtic","knot","loop")
 
@@ -718,7 +718,7 @@ END knotbox
 #=====================================================================
 
 BOX latticebox
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("lattice","geometric","tiling")
 
@@ -743,7 +743,7 @@ END latticebox
 #=====================================================================
 
 BOX decoframe
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("art-deco","ornate","poster")
 
@@ -768,7 +768,7 @@ END decoframe
 #=====================================================================
 
 BOX neongrid
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("sci-fi","grid","terminal")
 
@@ -793,7 +793,7 @@ END neongrid
 #=====================================================================
 
 BOX runeslab
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("runes","stone","mythic")
 
@@ -818,7 +818,7 @@ END runeslab
 #=====================================================================
 
 BOX scallopwave
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("curves","marine","decorative")
 
@@ -843,7 +843,7 @@ END scallopwave
 #=====================================================================
 
 BOX brickwork
-author   "R. Pfahl"
+author   "Rick Pfahl"
 designer "(public domain)"
 tags     ("brick","masonry","industrial")
 
