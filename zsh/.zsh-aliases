@@ -1,3 +1,4 @@
 # alias alias_name='command_to_run --option"
 alias venv-activate='source venv/bin/activate'
 
+alias lsblk+='lsblk -oNAME,PATH,SIZE,FSUSE%,FSAVAIL,TYPE,FSTYPE,MOUNTPOINTS'

@@ -1,6 +1,15 @@
+###############################################################################
+#
+# .zshrc
+#
+# 2025 Rick Pfahl <pfahlr@gmail.com>
+#
+###############################################################################
+
+setopt interactive_comments
+
 # note to acheive actual boolean false behavior variable must be set to nothing or empty
 # string, not `false` as the value `true` is meaningless it evalueates true if set to anything 
-
 USE_POWERLINE=
 USE_STARSHIP=$([[ true && ! $USE_POWERLINE ]] && echo 'true')
 USE_MANJARO_STOCK_ZSH_CONFIG=
@@ -61,3 +70,9 @@ bindkey -v
 # list of additional rc-files to source. (configs for individual programs)
 [[ -f $HOME/.zsh-rc-extra ]] && source $HOME/.zsh-rc-extra
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/var/home/rick/binary_app_releases/google-cloud-sdk/path.zsh.inc' ]; then . '/var/home/rick/binary_app_releases/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/var/home/rick/binary_app_releases/google-cloud-sdk/completion.zsh.inc' ]; then . '/var/home/rick/binary_app_releases/google-cloud-sdk/completion.zsh.inc'; fi
