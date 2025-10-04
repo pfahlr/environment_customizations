@@ -5,5 +5,20 @@
 #                           #
 #############################
 
+function zsh_functions_verify() 
+{
+    echo ".zsh-functions has been loaded"
+}
+
+function use_codex_plus() 
+{
+    unset OPENAI_API_KEY
+    codex login
+}
+
+function use_codex_api() 
+{
+    export OPENAI_API_KEY="your_api_key_here"
+}
 
 

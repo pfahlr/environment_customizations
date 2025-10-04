@@ -1,10 +1,13 @@
-###############################################################################
-#
-# .zshrc
-#
-# 2025 Rick Pfahl <pfahlr@gmail.com>
-#
-###############################################################################
+###################################
+#  _____ _____ _____ _____ _____  #
+# |__   |   __|  |  | __  |     | #
+# |   __|__   |     |    -|   --| #
+# |_____|_____|__|__|__|__|_____| #
+# 2025 Rick Pfahl 		  #
+#                                 #
+###################################
+
+
 
 setopt interactive_comments
 
@@ -16,13 +19,22 @@ USE_MANJARO_STOCK_ZSH_CONFIG=
 
 export LIBVA_DRIVER_NAME=iHD
 
+if [ -f "/run/.containerenv" ]; then
+  TOOLBOX_NAME=$(grep 'name=' /run/.containerenv | sed -e 's/^name=\"\(.*\)\"$/\1/')
+  echo "You are in the Toolbox: $TOOLBOX_NAME"
+else
+  TOOLBOX_NAME="host"
+  echo "You are not currently in a Toolbox container."
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ $USE_POWERLINE && -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 # command -v <command to test if exists> > /dev/null 2>&1 (redirects stdout and stderr to /dev/null)
 # && (what follows && only executes if the preceeding returned true). So below says, if  USE_STARSHIP
 # and starship command exists then run it
-[[ $USE_STARSHIP ]] && command -v starship > /dev/null 2>&1 && eval "$(starship init zsh)"
+
+[[ $USE_STARSHIP ]] && export STARSHIP_CONFIG="~/.config/$TOOLBOX_NAME.starship.toml" && command -v starship > /dev/null 2>&1 && eval "$(starship init zsh)"
 
 export TERM="xterm-256color"
 

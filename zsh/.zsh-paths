@@ -1,3 +1,11 @@
+###########################################
+#  ____  ______ __  ___       __  __      #
+# /_  / / __/ // / / _ \___ _/ /_/ /  ___ #
+#  / /__\ \/ _  / / ___/ _ `/ __/ _ \(_-< #
+# /___/___/_//_/ /_/   \_,_/\__/_//_/___/ #
+#                                         #
+###########################################
+
 # add more paths here, place in  `if [[ -d /PATH/ ]] then; export PATH...; fi` blocks for good form
 paths=("$HOME/bash_scripts", "$HOME/.local/share/pnpm/.tools/pnpm/10.11.0/bin/", "$HOME/bun/bin" "$HOME/bin" "$HOME/.local/bin" "$HOME/bash_scripts" "$HOME/.cargo/bin" "$HOME/.npm-packages/bin" "$HOME/go/bin" "$HOME/.rd/bin" "/var/lib/snapd/snap/bin")
 for i in $paths; do
