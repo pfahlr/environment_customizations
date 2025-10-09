@@ -76,6 +76,9 @@ bindkey -v
 # environment variables go in .zsh-env
 [[ -f $HOME/.zsh-env ]] && source $HOME/.zsh-env
 
+# functions go in .zsh-functions
+[[ -f $HOME/.zsh-functions ]] && source $HOME/.zsh-functions
+
 # aliases go in .zsh-aliases
 [[ -f $HOME/.zsh-aliases ]] && source $HOME/.zsh-aliases
 
