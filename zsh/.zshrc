@@ -85,9 +85,15 @@ bindkey -v
 # list of additional rc-files to source. (configs for individual programs)
 [[ -f $HOME/.zsh-rc-extra ]] && source $HOME/.zsh-rc-extra
 
+# atuin setup 
+[[ -f $HOME/.zsh-atuin ]] && source $HOME/.zsh-atuin
+
+
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/var/home/rick/binary_app_releases/google-cloud-sdk/path.zsh.inc' ]; then . '/var/home/rick/binary_app_releases/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/var/home/rick/binary_app_releases/google-cloud-sdk/completion.zsh.inc' ]; then . '/var/home/rick/binary_app_releases/google-cloud-sdk/completion.zsh.inc'; fi
+
+source /home/rick/.config/broot/launcher/bash/br

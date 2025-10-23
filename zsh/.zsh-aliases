@@ -9,3 +9,5 @@ alias venv-activate='source venv/bin/activate'
 alias lsblk+='lsblk -oNAME,PATH,SIZE,FSUSE%,FSAVAIL,TYPE,FSTYPE,MOUNTPOINTS'
 
 alias wineo='flatpak run org.winehq.Wine'
+
+alias iotopz='sudo iotop --color --show-io --unicode -k -d 0.05 -g rw -c --si -x'
