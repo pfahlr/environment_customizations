@@ -88,6 +88,8 @@ bindkey -v
 # atuin setup 
 [[ -f $HOME/.zsh-atuin ]] && source $HOME/.zsh-atuin
 
+# zoxide 
+[[ -f $HOME/.zsh-zoxide ]] && source $HOME/.zsh-zoxide
 
 
 # The next line updates PATH for the Google Cloud SDK.
