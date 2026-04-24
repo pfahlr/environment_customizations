@@ -86,7 +86,7 @@ bindkey -v
 [[ -f $HOME/.zsh-rc-extra ]] && source $HOME/.zsh-rc-extra
 
 # atuin setup 
-[[ -f $HOME/.zsh-atuin ]] && source $HOME/.zsh-atuin
+#[[ -f $HOME/.zsh-atuin ]] && source $HOME/.zsh-atuin
 
 # zoxide 
 [[ -f $HOME/.zsh-zoxide ]] && source $HOME/.zsh-zoxide
@@ -98,4 +98,6 @@ if [ -f '/var/home/rick/binary_app_releases/google-cloud-sdk/path.zsh.inc' ]; th
 # The next line enables shell command completion for gcloud.
 if [ -f '/var/home/rick/binary_app_releases/google-cloud-sdk/completion.zsh.inc' ]; then . '/var/home/rick/binary_app_releases/google-cloud-sdk/completion.zsh.inc'; fi
 
-source /home/rick/.config/broot/launcher/bash/br
+#source /home/rick/.config/broot/launcher/bash/br
+
+eval "$(direnv hook zsh)"
